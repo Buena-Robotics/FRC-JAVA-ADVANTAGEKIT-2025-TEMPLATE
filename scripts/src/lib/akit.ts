@@ -17,8 +17,8 @@ export namespace Akit {
     // A model must be included in the folder with the name "model.glb". CAD files must be converted to glTF; see this page for details. The config file must be in the following format:
     export interface Robot {
         name: string; // Unique name, required for all asset types
-        sourceUrl: string; // Link to the original file, optional
-        disableSimplification: boolean; // Whether to disable model simplification, optional
+        sourceUrl?: string; // Link to the original file, optional
+        disableSimplification?: boolean; // Whether to disable model simplification, optional
         rotations: Rotation[]; // Sequence of rotations along the x, y, and z axes
         position: Position3D; // Position offset in meters, applied after rotation
         cameras: // Fixed camera positions, can be empty
@@ -60,7 +60,7 @@ export namespace Akit {
         xSourceInverted: boolean; // Not inverted: right = positive
         ySourceIndex: number;
         ySourceInverted: boolean; // Not inverted: up = positive
-        buttonSourceIndex: number; // Optional
+        buttonSourceIndex?: number; // Optional
     }
     export interface Joystick__SingleAxis {
         type: "axis"; // A single axis value
@@ -74,7 +74,7 @@ export namespace Akit {
     // An image must be included in the folder with the name "image.png". It should be oriented with the blue alliance on the left. The config file must be in the following format:
     export interface FieldFlat {
         name: string; // Unique name, required for all asset types
-        sourceUrl: string; // Link to the original file, optional
+        sourceUrl?: string; // Link to the original file, optional
         topLeft: [number, number]; // Pixel coordinate (origin at upper left)
         bottomRight: [number, number]; // Pixel coordinate (origin at upper left)
         widthInches: number; // Real width of the field (long side)
@@ -85,7 +85,7 @@ export namespace Akit {
     // A model must be included in the folder with the name "model.glb". After all rotations are applied, the field should be oriented with the blue alliance on the left. CAD files must be converted to glTF; see this page for details. Game piece models follow the naming convention "model_INDEX.glb" based on the order that they appear in the "gamePieces" array.
     export interface Field3d {
         name: string; // Unique name, required for all asset types
-        sourceUrl: string; // Link to the original file, optional
+        sourceUrl?: string; // Link to the original file, optional
         rotations: Rotation[]; // Sequence of rotations along the x, y, and z axes
         widthInches: number; // Real width of the field (long side)
         heightInches: number; // Real height of the field (short side)

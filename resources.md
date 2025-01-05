@@ -7,3 +7,6 @@
 # [AdvantageScope Docs](https://docs.advantagescope.org/)
 # [AdvantageScope Custom Assets](https://docs.advantagescope.org/more-features/custom-assets/)
 # [PhotonVision repositories: photonvision + photon-image-modifier + rknn_jni](https://github.com/PhotonVision)
+# [Jetson Orin Nano Getting Started Guige](https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit#firmware)
+# [Jetson Orin Nano Initial Setup](https://www.jetson-ai-lab.com/initial_setup_jon.html)
+# [Jetson Orin Nano Gettings Started Isaac Ros](https://nvidia-isaac-ros.github.io/getting_started/index.html)
